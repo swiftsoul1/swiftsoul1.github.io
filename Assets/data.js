@@ -15,9 +15,9 @@ let data = {
             educations:[
                 {
                     name: 'New Mexico Highlands University, Albuquerque, NM',
-                    date: 'Spring 2020-(expected graduation December 2022)',
+                    date: 'Spring 2020-Spring 2024',
                     degree: 'BSSD “Bachelors of Software Systems Design"',
-                    gpa:'GPA: N/A',
+                    gpa:'GPA: 3.43',
                 },
                 {
                     name: 'Central New Mexico Community College, Albuquerque, NM',
@@ -27,8 +27,30 @@ let data = {
                 },
             ],
             workplaces:[
+                 {
+                    company: 'New Mexico Highlands University-DWP internship',
+                    date:'June 2021-August 2021',
+                    title: 'Web Developer Intern',
+                    tasks:[
+                        'Used a custom map template and custom pins with an api to create a world map for displaying pins associated with desriptive entries',
+                        'Created a form so users could add pins information and pictures to the map.',
+                        'Created an admin login and management page for filtering through user submitions to aprove what was seen on the map',
+                        
+                    ]
+                },
+                 {
+                    company: 'New Mexico Highlands University-NMHM internship',
+                    date:'June 2021-August 2021',
+                    title: 'Web Developer Intern',
+                    tasks:[
+                        'Created a database registry for artists categorized searching for median type, tribe, alphabetical etc.',
+                        'Created a custom wordpress theme to match the already existing website.',
+                        'Created a custom profile template for displaying artist information with custom icons for socail medias',
+                        
+                    ]
+                },
                 {
-                    company: 'New Mexico Highlands University',
+                    company: 'New Mexico Highlands University-Yokai Exhibit internship',
                     date:'June 2020-August 2020',
                     title: 'Web Developer Intern',
                     tasks:[
@@ -58,8 +80,26 @@ let data = {
         {
             slug: 'portfolio',
             items:[
+                 {
+                    name:'NMHU-Portal Artist Program',
+                    featured:'Assets/NMHM.PNG',
+                    link:{
+                        ref:'https://portal.nmhistorymuseum.org/',
+                        text:'Live Site'
+                    },
+                    summary:'Created a custom wordpress theme using a barebones template to create a database of the artists showcasing their artwork at the museum and created a inormation page foe the artists so that people could viewthem online.',
+                },
+                 {
+                    name:'Moifa-Dressing With Purpose',
+                    featured:'Assets/DWP.PNG',
+                    link:{
+                        ref:'http://dressingwithpurpose.moifa.org/',
+                        text:'Live Site'
+                    },
+                    summary:'Implemented a custom world map with custom markers associated to custom entries. created a form that users can imput pictures, coordinates for the map and descriptions for points. created an admin style login to sort through users entries and approve them to put on the map',
+                },
                 {
-                    name:'Yokai Exhibition',
+                    name:'Moifa-Yokai Exhibition',
                     featured:'Assets/Moifa.PNG',
                     link:{
                         ref:'https://yokai.moifa.org/',
