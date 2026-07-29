@@ -1,10 +1,8 @@
 let routes = [
-    /*home*/
     { path: '/', component: HomePage, name:"home"},
-    //primary
     { path: '/portfolio', component: Portfolio, name:"portfolio", props: true},
-    //primary
     { path: '/contact', component: Contact, name:"contact", props: true},
+    { path: '/demos', component: DemoPage, name:"demos", props: true},
 ];
 
 let router = new VueRouter({

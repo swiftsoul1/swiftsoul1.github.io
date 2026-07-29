@@ -1,126 +1,123 @@
 let data = {
-    pages:[
-        //home
+    pages: [
         {
             slug: 'home',
-            skills:[
-                'Programming languages: C#, C++, Java, Javascript, HTML/CSS, XML/XAML layouts, Python, SQL/NoSQL, PHP',
-                'User Interfaces: Proficient with design structure standard java/python UI libraries, windows and WPF forms  and many other presentation tools.',
-                'Web and App Design: Understanding of Bootstrap, React-native, Vue, ASP.net Web design structures, PHP, HTML, CSS, and Javascript to create Web and phone app as well as Knowledge of working with Android based apps.',
-                'Advanced Problem-Solving Skills: Understands use of object orientated programming for the use of advanced arithmetic to move, store and manipulate data',
-                'SQL and NoSQL database design: create, edit, data-mine, connect to a data base using SQL standards in many environments.',
-                'Experience using GitHub and Azure DevOps',
-                
+            intro: {
+                eyebrow: 'Jonah Spear · Full-Stack Developer',
+                title: 'Software projects, websites, and interactive experiences.',
+                summary: 'I build practical web experiences and business tools, translating requirements and visual plans into responsive, maintainable software.'
+            },
+            stats: [
+                { value: '6', label: 'selected real-world projects' },
+                { value: '3', label: 'museum web collaborations' },
+                { value: '2025–Now', label: 'software development at Mail Masters' }
             ],
-            educations:[
-                {
-                    name: 'New Mexico Highlands University, Albuquerque, NM',
-                    date: 'Spring 2020-Spring 2024',
-                    degree: 'BSSD “Bachelors of Software Systems Design"',
-                    gpa:'GPA: 3.43',
-                },
-                {
-                    name: 'Central New Mexico Community College, Albuquerque, NM',
-                    date: 'September 2016-Spring 2020',
-                    degree: 'AAS “Computer Information Systems (CIS) - Programming Concentration Degree”',
-                    gpa:'GPA: 3.29',
-                },
+            capabilities: [
+                { title: 'Web applications', text: 'Responsive interfaces, content systems, forms, and data-backed workflows.' },
+                { title: 'Business websites', text: 'Clear information architecture and maintainable sites built around real operating needs.' },
+                { title: 'Interactive experiences', text: 'Design implementation, custom navigation, maps, profiles, and exhibition content.' },
+                { title: 'Mail-processing systems', text: 'Software and workflow thinking grounded in hands-on production experience.' }
             ],
-            workplaces:[
-                 {
-                    company: 'New Mexico Highlands University-DWP internship',
-                    date:'June 2021-August 2021',
-                    title: 'Web Developer Intern',
-                    tasks:[
-                        'Used a custom map template and custom pins with an api to create a world map for displaying pins associated with desriptive entries',
-                        'Created a form so users could add pins information and pictures to the map.',
-                        'Created an admin login and management page for filtering through user submitions to aprove what was seen on the map',
-                        
-                    ]
-                },
-                 {
-                    company: 'New Mexico Highlands University-NMHM internship',
-                    date:'June 2021-August 2021',
-                    title: 'Web Developer Intern',
-                    tasks:[
-                        'Created a database registry for artists categorized searching for median type, tribe, alphabetical etc.',
-                        'Created a custom wordpress theme to match the already existing website.',
-                        'Created a custom profile template for displaying artist information with custom icons for socail medias',
-                        
-                    ]
-                },
-                {
-                    company: 'New Mexico Highlands University-Yokai Exhibit internship',
-                    date:'June 2020-August 2020',
-                    title: 'Web Developer Intern',
-                    tasks:[
-                        'Worked with a team to create a web-based exhibit',
-                        'Responsible for creating Webpages based on the designers ideas.',
-                        'Worked with Curator of the Museum to ensure content was accurate.',
-                        'Created organized data structure based on which page was to be displayed.',
-                        
-                    ]
-                },
-                {
-                    company: 'HR Integrity Estate Liquidation Services',
-                    date:'June 2016 – Current',
-                    title: 'Cashier',
-                    tasks:[
-                        'Researched antiques and high-end household items to be sold at estate sales',
-                        'Responsible for handling cash, credit or check transactions with customers',
-                        'Ensure pricing is correct',
-                        'Reconciled all cash and credit payments at end of each day',
-                        'Aided customers with various needs',
-                        
-                    ]
-                },
+            stack: [
+                { label: 'Frontend', value: 'Vue.js, JavaScript, HTML, CSS, Bootstrap, React' },
+                { label: 'Backend & data', value: 'Python, Node.js, PHP, SQL/NoSQL, MongoDB' },
+                { label: 'Platforms & tools', value: 'Git, WordPress, Azure DevOps, Adobe tools' },
+                { label: 'Practices', value: 'Responsive design, accessibility, APIs, debugging, stakeholder iteration' }
+            ],
+            education: [
+                { school: 'University of New Mexico', degree: 'M.S. Computer Science', date: 'Current', gpa: 'GPA 3.19' },
+                { school: 'New Mexico Highlands University', degree: 'B.S. Software Systems Design', date: '2024', gpa: 'GPA 3.19' },
+                { school: 'Central New Mexico Community College', degree: 'A.A.S. Computer Information Systems', date: '2021', gpa: 'GPA 3.29' }
             ]
         },
-        //portfolio
         {
             slug: 'portfolio',
-            items:[
-                 {
-                    name:'NMHU-Portal Artist Program',
-                    featured:'Assets/NMHM.PNG',
-                    link:{
-                        ref:'https://portal.nmhistorymuseum.org/',
-                        text:'Live Site'
-                    },
-                    summary:'Created a custom wordpress theme using a barebones template to create a database of the artists showcasing their artwork at the museum and created a inormation page foe the artists so that people could viewthem online.',
-                },
-                 {
-                    name:'Moifa-Dressing With Purpose',
-                    featured:'Assets/DWP.PNG',
-                    link:{
-                        ref:'http://dressingwithpurpose.moifa.org/',
-                        text:'Live Site'
-                    },
-                    summary:'Implemented a custom world map with custom markers associated to custom entries. created a form that users can imput pictures, coordinates for the map and descriptions for points. created an admin style login to sort through users entries and approve them to put on the map',
+            intro: 'Production work, institutional collaborations, and website projects. Concept demos are separated below so it is always clear what is live work and what is a capability study.',
+            items: [
+                {
+                    id: 'yokai',
+                    name: 'Yokai Interactive Exhibition',
+                    organization: 'Museum of International Folk Art',
+                    role: 'Web Developer Intern · 2020',
+                    featured: 'Assets/Moifa.PNG',
+                    href: 'https://yokai.moifa.org/',
+                    linkText: 'Visit live site',
+                    summary: 'Built the HTML pages and Vue application structure for an online museum exhibition. Translated a designer’s Adobe plans into scalable webpages and incorporated the curator’s content edits and critiques.',
+                    tags: ['Vue.js', 'HTML/CSS', 'Bootstrap', 'Design implementation']
                 },
                 {
-                    name:'Moifa-Yokai Exhibition',
-                    featured:'Assets/Moifa.PNG',
-                    link:{
-                        ref:'https://yokai.moifa.org/',
-                        text:'Live Site'
-                    },
-                    summary:'Worked with the staff of the museum, a student designer and was supervised by an NMHU teacher to create an Online Version of the "Yokai: Ghost and Demons of Japan" exhibit at the Santa Fe Museum of natural folk art, so that it could still be "visitable" during the Covid Lockdown',
+                    id: 'mailmasters',
+                    name: 'Mail Masters of the Southwest',
+                    organization: 'K&R Enterprises / Mail Masters',
+                    role: 'Software Developer · 2025–Current',
+                    featured: 'Assets/mailmasters.png',
+                    href: 'https://mailmasterssw.com/',
+                    linkText: 'Visit live site',
+                    summary: 'Recreated the company website and supports software and workflow work within a commercial mail-processing environment. The site organizes printing, mailing, mailroom management, and quote-request information for New Mexico businesses.',
+                    tags: ['Web development', 'Business systems', 'Workflow analysis', 'Production operations']
                 },
                 {
-                    name:'JavaScript Dnd Character Creator',
-                    featured:'Assets/DND.PNG',
-                    link:{
-                        ref:'https://github.com/swiftsoul1/JS-BSSD3520-Midterm',
-                        text:'Github Repository'
-                    },
-                    summary:'A simple Demo of Javascript code to create a basic level one character Based on what the user chooses. This project displays Bootstrap/CSS, HTMl and Javascript abilities in a webbased enviroment.',
+                    id: 'roadrunner',
+                    name: 'Roadrunner Auctions',
+                    organization: 'Client website',
+                    role: 'Website development',
+                    featured: 'Assets/roadrunner.png',
+                    href: 'https://roadrunnerauctions.com/',
+                    linkText: 'Visit live site',
+                    summary: 'A website focused on presenting auction services clearly, directing buyers to current listings, and giving sellers a straightforward path to learn about the process.',
+                    tags: ['Responsive web', 'Content architecture', 'Client work']
                 },
+                {
+                    id: 'hr-integrity',
+                    name: 'HR Integrity Liquidation Services',
+                    organization: 'HR Integrity',
+                    role: 'Webmaster · 2016–Current',
+                    featured: 'Assets/hr-integrity.png',
+                    href: 'https://hrintegrityservices.com/',
+                    linkText: 'Visit live site',
+                    summary: 'Created and maintains the company website while supporting the business through estate-sale preparation, pricing research, customer service, and front-desk operations.',
+                    tags: ['Website maintenance', 'Business operations', 'Content updates']
+                },
+                {
+                    id: 'dressing-with-purpose',
+                    name: 'Dressing With Purpose',
+                    organization: 'Museum of International Folk Art',
+                    role: 'Web Developer Intern · 2021',
+                    featured: 'Assets/DWP.PNG',
+                    href: 'http://dressingwithpurpose.moifa.org/',
+                    linkText: 'Visit live site',
+                    summary: 'Built an interactive map with custom pins, descriptive content, user submissions, images, and an administrative review flow for approving or removing entries.',
+                    tags: ['Interactive maps', 'API', 'Forms', 'Admin workflow']
+                },
+                {
+                    id: 'artist-portal',
+                    name: 'NM History Museum Artist Portal',
+                    organization: 'New Mexico History Museum',
+                    role: 'Web Developer Intern · 2021',
+                    featured: 'Assets/NMHM.PNG',
+                    href: 'https://portal.nmhistorymuseum.org/',
+                    linkText: 'Visit live site',
+                    summary: 'Created a custom WordPress theme matching the museum site, a searchable artist registry, and profile pages where artists could share work and social links.',
+                    tags: ['WordPress', 'Custom theme', 'Database', 'Profiles']
+                }
+            ],
+            demos: [
+                { id: 'home-demo', name: 'Home page', summary: 'Headline, value proposition, calls to action, and service overview.' },
+                { id: 'about-demo', name: 'About page', summary: 'Company story, values, people, and credibility.' },
+                { id: 'contact-demo', name: 'Contact page', summary: 'Clear contact details and an accessible inquiry form.' },
+                { id: 'store-demo', name: 'Store page', summary: 'Product discovery, pricing, and cart-ready actions.' },
+                { id: 'gallery-demo', name: 'Gallery page', summary: 'A responsive visual collection with categories and captions.' },
+                { id: 'profile-demo', name: 'Profile page', summary: 'Identity, activity, details, and account actions.' },
+                { id: 'political-demo', name: 'Political campaign', summary: 'Candidate introduction, priorities, events, endorsements, and supporter actions.' }
             ]
         },
-        //contact
         {
-            slug:'contact',
+            slug: 'contact',
+            email: 'Jonah.Spear@yahoo.com',
+            phone: '(505) 389-0960',
+            location: 'Albuquerque, New Mexico',
+            linkedin: 'https://www.linkedin.com/in/jonah-spear-li/',
+            intro: 'Interested in my work or looking for a developer? Email me or connect on LinkedIn.'
         }
     ]
-}
+};
